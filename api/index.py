@@ -36,6 +36,18 @@ def _render_day_cell(day_iso: str, day_data: Dict[str, Any]) -> str:
             if key == "delish" and not include_delish:
                 continue
             items = meal.get(key) or []
+            # Dessert customization: show only first item, except Sundays override
+            if key == "desserts":
+                is_sunday = False
+                try:
+                    from datetime import date
+                    is_sunday = date.fromisoformat(day_iso).weekday() == 6  # Monday=0 ... Sunday=6
+                except Exception:
+                    pass
+                if is_sunday:
+                    items = ["Sunday Sundae!"]
+                elif items:
+                    items = items[:1]
             if not items:
                 continue
             parts.append(f"<div class='text-sm text-gray-500 mb-1'>{LABELS[key]}</div>")
