@@ -22,7 +22,7 @@ LABELS = {
     "starch_potatoes": "Starch & Potatoes",
     "vegetables": "Vegetables",
     "delish": "Delish",
-    "desserts": "Desserts",
+    "desserts": "Dessert",
 }
 
 class ErrorOut(BaseModel):
@@ -36,6 +36,14 @@ def _render_day_cell(day_iso: str, day_data: Dict[str, Any]) -> str:
             if key == "delish" and not include_delish:
                 continue
             items = meal.get(key) or []
+            # Sunday entree override (Lunch only)
+            if key == "entrees":
+                try:
+                    from datetime import date
+                    if date.fromisoformat(day_iso).weekday() == 6 and title.lower() == "lunch":
+                        items = ["Sunday Brunch"]
+                except Exception:
+                    pass
             # Dessert customization: show only first item.
             # Sunday override applies ONLY to Dinner.
             if key == "desserts":
@@ -53,9 +61,17 @@ def _render_day_cell(day_iso: str, day_data: Dict[str, Any]) -> str:
                 continue
             parts.append(f"<div class='text-sm text-gray-500 mb-1'>{LABELS[key]}</div>")
             parts.append("<div class='mb-2'>")
+            # Choose very light pastel background per category
+            bg_cls = {
+                "soups": "bg-blue-50",
+                "entrees": "bg-red-50",
+                "starch_potatoes": "bg-yellow-50",
+                "vegetables": "bg-green-50",
+                "desserts": "bg-purple-50",
+            }.get(key, "bg-gray-100")
             for it in items:
                 # Use block-level divs so each item is on its own line
-                parts.append(f"<div class='px-2 py-1 text-sm bg-gray-100 rounded-lg mb-2'>{it}</div>")
+                parts.append(f"<div class='px-2 py-1 text-sm {bg_cls} rounded-lg mb-2'>{it}</div>")
             parts.append("</div>")
         if all(not (meal.get(k) or []) for k in (["soups","entrees","starch_potatoes","vegetables","desserts"] + (["delish"] if include_delish else []))):
             parts.append("<div class='text-sm text-gray-400'>No items.</div>")
