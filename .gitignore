@@ -1,0 +1,37 @@
+# Vercel
+.vercel
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# Local data directory (raw HTML cache)
+data/raw/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test/debug files
+test_*.py
+debug_*.py
+monday_nov17.html

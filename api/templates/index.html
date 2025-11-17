@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HUDS Weekly (Lunch & Dinner)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- HTMX -->
+  <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+  <style>
+    .chip { @apply inline-block px-2 py-1 text-sm bg-gray-100 rounded-lg mr-2 mb-2; }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+  <div class="max-w-6xl mx-auto p-4">
+    <header class="flex items-center justify-between gap-4 mb-3">
+      <div>
+        <h1 class="text-2xl font-semibold">HUDS Weekly Menu</h1>
+        <div class="text-sm text-gray-500">Non-Quincy Houses • Lunch & Dinner only</div>
+      </div>
+      <div class="flex items-center gap-2">
+        <button
+          id="refreshBtn"
+          class="px-3 py-2 rounded-xl bg-black text-white text-sm"
+          hx-post="/api/refresh"
+          hx-trigger="click"
+          hx-swap="none"
+          hx-on::after-request="htmx.ajax('GET','/api/week_fragment',{target:'#grid',swap:'outerHTML'})"
+        >Refresh now</button>
+      </div>
+    </header>
+
+    <!-- Status banners -->
+    {% if banner %}
+      <div class="mb-3 p-3 rounded-xl text-sm {{ 'bg-red-50 text-red-800' if banner.kind=='error' else 'bg-yellow-50 text-yellow-800' }}">
+        {{ banner.text }}
+      </div>
+    {% endif %}
+
+    <!-- Grid placeholder; filled by server initially and via /api/week_fragment -->
+    <div id="grid">
+      {{ grid|safe }}
+    </div>
+
+    <footer class="mt-8 text-xs text-gray-400">
+      Excludes Quincy & Annenberg. Only shows selected stations: Soups, Entrées, Starch & Potatoes, Vegetables, (Lunch) Delish, Desserts.
+    </footer>
+  </div>
+</body>
+</html>
