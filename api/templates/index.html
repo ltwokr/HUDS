@@ -27,7 +27,7 @@
           hx-trigger="click"
           hx-swap="none"
           hx-on::after-request="htmx.ajax('GET','/api/week_fragment',{target:'#grid',swap:'outerHTML'})"
-        >Refresh now</button>
+        >Refresh</button>
       </div>
     </header>
 
@@ -43,9 +43,7 @@
       {{ grid|safe }}
     </div>
 
-    <footer class="mt-8 text-xs text-gray-400">
-      Excludes Quincy & Annenberg. Only shows selected stations: Soups, Entrées, Starch & Potatoes, Vegetables, (Lunch) Delish, Desserts.
-    </footer>
+    <!-- Footer removed per request -->
   </div>
 </body>
 </html>
