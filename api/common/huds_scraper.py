@@ -22,7 +22,7 @@ FUZZY_MAP = {
     "soups": {"soup", "soups"},
     "entrees": {"entrée", "entrees", "entrée(s)", "main entrée", "main entrees", "main course", "entrée(s)"},
     "starch_potatoes": {"starch and potatoes", "starch & potatoes", "starches", "potato", "potatoes"},
-    "vegetables": {"vegetable", "vegetables", "veg"},
+    "vegetables": {"vegetable", "vegetables"},
     "desserts": {"dessert", "desserts", "sweets"},
 }
 BUCKET_ORDER = ["soups", "entrees", "starch_potatoes", "vegetables", "desserts"]
