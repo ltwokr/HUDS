@@ -28,84 +28,126 @@ LABELS = {
 class ErrorOut(BaseModel):
     error: str
 
-def _render_day_cell(day_iso: str, day_data: Dict[str, Any]) -> str:
-    # Two sections: Lunch and Dinner
-    def render_meal(title: str, meal: Dict[str, Any], include_delish: bool) -> str:
-        parts = [f"<div class='mb-3'><div class='text-lg font-semibold mb-2'>{title}</div>"]
-        for key in ALLOWED_ORDER:
-            if key == "delish" and not include_delish:
-                continue
-            items = meal.get(key) or []
-            # Sunday entree override (Lunch only)
-            if key == "entrees":
-                try:
-                    from datetime import date
-                    if date.fromisoformat(day_iso).weekday() == 6 and title.lower() == "lunch":
-                        items = ["Sunday Brunch"]
-                except Exception:
-                    pass
-            # Dessert customization: show only first item.
-            # Sunday override applies ONLY to Dinner.
-            if key == "desserts":
-                is_sunday = False
-                try:
-                    from datetime import date
-                    is_sunday = date.fromisoformat(day_iso).weekday() == 6  # Monday=0 ... Sunday=6
-                except Exception:
-                    pass
-                if is_sunday and title.lower() == "dinner":
+def _render_day_cell(day_iso: str, day_data: Dict[str, Any], is_today: bool = False) -> str:
+    """Render a single day card with 3-column layout: Entrees, Veg+Starch, Soups+Dessert."""
+    from datetime import date
+    
+    lunch = day_data.get("lunch", {})
+    dinner = day_data.get("dinner", {})
+    
+    # Get day title
+    dt_title = day_iso
+    day_name = ""
+    try:
+        dt_obj = date.fromisoformat(day_iso)
+        day_name = dt_obj.strftime("%A")
+        dt_title = dt_obj.strftime("%b %-d") if os.name != "nt" else dt_obj.strftime("%b %d").lstrip("0")
+    except Exception:
+        pass
+    
+    # Check if Sunday for special overrides
+    is_sunday = False
+    try:
+        is_sunday = date.fromisoformat(day_iso).weekday() == 6
+    except Exception:
+        pass
+    
+    # Helper to render a column section
+    def render_column(title: str, categories: list, meal_type: str) -> str:
+        col_parts = [f"<div class='text-sm font-semibold text-gray-700 mb-2'>{title}</div>"]
+        has_content = False
+        
+        for cat in categories:
+            items = lunch.get(cat, []) if meal_type == "lunch" else dinner.get(cat, [])
+            
+            # Apply overrides
+            if cat == "entrees" and is_sunday and meal_type == "lunch":
+                items = ["Sunday Brunch"]
+            if cat == "desserts":
+                if is_sunday and meal_type == "dinner":
                     items = ["Sunday Sundae!"]
                 elif items:
                     items = items[:1]
+            
             if not items:
                 continue
-            parts.append(f"<div class='text-sm text-gray-500 mb-1'>{LABELS[key]}</div>")
-            parts.append("<div class='mb-2'>")
-            # Choose very light pastel background per category
+            
+            has_content = True
             bg_cls = {
                 "soups": "bg-blue-50",
                 "entrees": "bg-red-50",
                 "starch_potatoes": "bg-yellow-50",
                 "vegetables": "bg-green-50",
                 "desserts": "bg-purple-50",
-            }.get(key, "bg-gray-100")
+            }.get(cat, "bg-gray-100")
+            
             for it in items:
-                # Use block-level divs so each item is on its own line
-                parts.append(f"<div class='px-2 py-1 text-sm {bg_cls} rounded-lg mb-2'>{it}</div>")
-            parts.append("</div>")
-        if all(not (meal.get(k) or []) for k in (["soups","entrees","starch_potatoes","vegetables","desserts"] + (["delish"] if include_delish else []))):
-            parts.append("<div class='text-sm text-gray-400'>No items.</div>")
-        parts.append("</div>")
-        return "\n".join(parts)
-
-    lunch = day_data.get("lunch", {})
-    dinner = day_data.get("dinner", {})
-
-    dt_title = day_iso
-    try:
-        dt_disp = day_iso
-        dt_obj = __import__("datetime").date.fromisoformat(day_iso)
-        dt_title = dt_obj.strftime("%A %b %-d") if os.name != "nt" else dt_obj.strftime("%A %b %d").lstrip("0")
-    except Exception:
-        pass
-
-    inner = [
-        f"<div class='text-xl font-bold mb-4'>{dt_title}</div>",
-        render_meal("Lunch", lunch, include_delish=True),
-        render_meal("Dinner", dinner, include_delish=False),
-    ]
-    return f"<div class='border rounded-2xl p-3'>{''.join(inner)}</div>"
+                col_parts.append(f"<div class='px-2 py-1 text-xs {bg_cls} rounded mb-1'>{it}</div>")
+        
+        if not has_content:
+            col_parts.append("<div class='text-xs text-gray-400'>—</div>")
+        
+        return "".join(col_parts)
+    
+    # Build 3 columns for Lunch
+    lunch_col1 = render_column("Entrées", ["entrees"], "lunch")
+    lunch_col2 = render_column("Veg + Starch", ["vegetables", "starch_potatoes"], "lunch")
+    lunch_col3 = render_column("Soups + Dessert", ["soups", "desserts"], "lunch")
+    
+    # Build 3 columns for Dinner
+    dinner_col1 = render_column("Entrées", ["entrees"], "dinner")
+    dinner_col2 = render_column("Veg + Starch", ["vegetables", "starch_potatoes"], "dinner")
+    dinner_col3 = render_column("Soups + Dessert", ["soups", "desserts"], "dinner")
+    
+    # Today indicator styling
+    today_ring = "ring-4 ring-blue-400" if is_today else ""
+    today_badge = "<div class='absolute top-2 right-2 bg-blue-500 text-white text-xs px-2 py-1 rounded-full'>Today</div>" if is_today else ""
+    
+    return f"""
+    <div class='snap-start shrink-0 w-full h-full relative {today_ring} rounded-2xl bg-white border p-4 flex flex-col'>
+      {today_badge}
+      <div class='text-center mb-4'>
+        <div class='text-2xl font-bold'>{day_name}</div>
+        <div class='text-sm text-gray-500'>{dt_title}</div>
+      </div>
+      
+      <div class='flex-1 grid grid-rows-2 gap-4 overflow-hidden'>
+        <!-- Lunch Row -->
+        <div class='border-b pb-2'>
+          <div class='text-base font-semibold mb-2'>Lunch</div>
+          <div class='grid grid-cols-3 gap-2 text-xs'>
+            <div>{lunch_col1}</div>
+            <div>{lunch_col2}</div>
+            <div>{lunch_col3}</div>
+          </div>
+        </div>
+        
+        <!-- Dinner Row -->
+        <div>
+          <div class='text-base font-semibold mb-2'>Dinner</div>
+          <div class='grid grid-cols-3 gap-2 text-xs'>
+            <div>{dinner_col1}</div>
+            <div>{dinner_col2}</div>
+            <div>{dinner_col3}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    """
 
 def _render_week_grid(data: Dict[str, Any]) -> str:
-    # Grid Monday->Sunday
+    """Horizontal scrollable week view with snap-to-scroll."""
     days = list(data.get("meals", {}).keys())
-    days_sorted = sorted(days)  # ISO sorts ascending Mon..Sun
+    days_sorted = sorted(days)
+    today = iso_today()
+    
     cells = []
     for d in days_sorted:
-        cells.append(_render_day_cell(d, data["meals"][d]))
-    # Responsive grid: 1col on mobile, 2 cols sm, 3 cols md, 4 lg
+        is_today = (d == today)
+        cells.append(_render_day_cell(d, data["meals"][d], is_today))
+    
     return f"""
-    <div id="grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+    <div id="grid" class="flex overflow-x-auto snap-x snap-mandatory gap-4 h-[calc(100vh-12rem)] pb-4" style="scroll-behavior: smooth;">
       {''.join(cells)}
     </div>
     """

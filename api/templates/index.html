@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-full">
 <head>
   <meta charset="utf-8">
   <title>HUDS Menu</title>
@@ -9,20 +9,23 @@
   <!-- HTMX -->
   <script src="https://unpkg.com/htmx.org@1.9.12"></script>
   <style>
-    /* Removed Tailwind @apply (not processed via CDN); using explicit classes inline */
+    body { overflow: hidden; }
+    /* Hide scrollbar but keep functionality */
+    #grid::-webkit-scrollbar { display: none; }
+    #grid { -ms-overflow-style: none; scrollbar-width: none; }
   </style>
 </head>
-<body class="bg-white text-gray-900">
-  <div class="max-w-6xl mx-auto p-4">
-    <header class="flex items-center justify-between gap-4 mb-3">
+<body class="bg-gray-50 text-gray-900 h-full flex flex-col">
+  <div class="flex-1 flex flex-col max-w-7xl mx-auto w-full p-4">
+    <header class="flex items-center justify-between gap-4 mb-4 shrink-0">
       <div>
         <h1 class="text-2xl font-semibold">HUDS Weekly Menu</h1>
-        <div class="text-sm text-gray-500">Upperclassmen Houses • Lunch & Dinner only</div>
+        <div class="text-sm text-gray-500">Upperclassmen Houses • Lunch & Dinner</div>
       </div>
       <div class="flex items-center gap-2">
         <button
           id="refreshBtn"
-          class="px-3 py-2 rounded-xl bg-black text-white text-sm"
+          class="px-3 py-2 rounded-xl bg-black text-white text-sm hover:bg-gray-800"
           hx-post="/api/refresh"
           hx-trigger="click"
           hx-swap="none"
@@ -33,17 +36,13 @@
 
     <!-- Status banners -->
     {% if banner %}
-      <div class="mb-3 p-3 rounded-xl text-sm {{ 'bg-red-50 text-red-800' if banner.kind=='error' else 'bg-yellow-50 text-yellow-800' }}">
+      <div class="mb-3 p-3 rounded-xl text-sm shrink-0 {{ 'bg-red-50 text-red-800' if banner.kind=='error' else 'bg-yellow-50 text-yellow-800' }}">
         {{ banner.text }}
       </div>
     {% endif %}
 
-    <!-- Grid placeholder; filled by server initially and via /api/week_fragment -->
-    <div id="grid">
-      {{ grid|safe }}
-    </div>
-
-    <!-- Footer removed per request -->
+    <!-- Horizontal scrollable week view -->
+    {{ grid|safe }}
   </div>
 </body>
 </html>
