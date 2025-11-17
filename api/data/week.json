@@ -1,454 +1,165 @@
 {
   "week_start": "2025-11-17",
   "week_end": "2025-11-23",
-  "generated_at": "2025-11-17T19:10:25Z",
+  "generated_at": "2025-11-17T19:32:22Z",
   "meals": {
     "2025-11-17": {
       "lunch": {
         "soups": [
           "Chicken & Dumpling Soup",
-          "Tomato Basil Soup (Vegan)"
+          "Tomato Basil Soup"
         ],
         "entrees": [
-          "Boom Boom Sauce (Vegetarian)",
-          "Buffalo Chicken Salad",
-          "Cheddar Cheese (Vegetarian)",
-          "Classic Cole Slaw (Vegetarian)",
-          "Kosher Dill Pickle Chips (Vegan)",
-          "Leaf Lettuce (Vegan)",
-          "No Nut Basil Pesto (Vegetarian)",
-          "Roasted Low-Sodium Turkey",
-          "Sliced Ham",
-          "Sliced Red Onions (Vegan)",
-          "Sliced Tomatoes (Vegan)",
-          "Swiss Cheese (Vegetarian)",
-          "Tuna Salad",
-          "Western Style Guacamole (Vegan)",
           "Chicken Tender",
           "Crumbled Bacon",
           "Grilled Chicken Breast",
           "Roasted Hot Dogs",
-          "Halal Chicken Tenders",
-          "Chefs Choice Delish Smoothie (Vegetarian)",
-          "Beef Chili"
+          "Vegan Macaroni & Cheese"
         ],
         "starch_potatoes": [
-          "Macaroni and Cheese (Vegetarian)",
-          "Brown Rice (Vegan)"
+          "Macaroni and Cheese"
         ],
         "vegetables": [
-          "Black Beans (Vegan)",
-          "Butter Beans (Vegan)",
-          "Caesar Salad (Vegetarian)",
-          "Corn Niblets (Vegan)",
-          "Cottage Cheese (Vegetarian)",
-          "Diced Onions (Vegan)",
-          "Grape Tomatoes (Vegan)",
-          "Grilled Tofu (Vegan)",
-          "HUDS Salad Mix (Vegan)",
-          "Hard Cooked Eggs (Vegetarian)",
-          "Hummus (Vegan)",
-          "Kalamata Olives (Vegan)",
-          "Little Leaf Greens (Vegan)",
-          "Quinoa Black Bean and Rost Corn Salad (Vegan)",
-          "Roasted Diced Beets (Vegan)",
-          "Roasted Salmon",
-          "Seasoned Halal Chicken Breast",
-          "Shredded Carrots (Vegan)",
-          "Shredded Cheddar Cheese (Vegetarian)",
-          "Sliced Avocado (Vegan)",
-          "Sliced Cucumbers (Vegan)",
-          "Sorghum (Vegan)",
-          "Steamed Broccoli (Vegan)",
-          "Suntan Pepper Strips (Vegan)",
-          "Tricolor Quinoa (Vegan)",
-          "Vegan Macaroni & Cheese (Vegan)",
-          "Roasted Brussel Sprouts with Cranberries & Garlic (Vegetarian)",
-          "Sauteed Spinach, Artichoke and Onions (Vegan)",
-          "Quinoa with Kale & Roasted Carrots (Vegan)",
-          "Steamed Green Peas (Vegan)",
-          "Warm Buttermilk Cornbread (Vegetarian)"
+          "Roasted Brussel Sprouts with Cranberries & Garlic",
+          "Sauteed Spinach, Artichoke and Onions"
         ],
-        "delish": [],
+        "delish": [
+          "Chefs Choice Delish Smoothie"
+        ],
         "desserts": [
-          "Chocolate Chip Cookies (Vegetarian)",
-          "Pineapple Soft serve (Vegan)",
-          "Strawberry Soft serve (Vegan)"
+          "Chocolate Chip Cookies",
+          "Pineapple Soft serve",
+          "Strawberry Soft serve"
         ]
       },
       "dinner": {
         "soups": [
           "Chicken & Dumpling Soup",
-          "Tomato Basil Soup (Vegan)"
+          "Tomato Basil Soup"
         ],
         "entrees": [
           "Chicken Lemongrass Potstickers",
           "Emerald Beef and Vegetable Stir-Fry",
-          "Vegetable Edamame Potstickers (Vegan)",
-          "Boom Boom Sauce (Vegetarian)",
-          "Cage Free Eggs Cooked to Order (Vegetarian)",
-          "Cage-Free Egg Whites Cooked to Order (Vegetarian)",
-          "Cheddar Cheese (Vegetarian)",
-          "Cheese Quesadilla (Vegetarian)",
-          "Crimson Vegan Burger (Vegan)",
-          "Frankfurter Rolls (Vegan)",
-          "French Fries (Vegan)",
-          "Grilled All Beef Old Neighborhood Hot Dog",
-          "Grilled Burger",
-          "Grilled Burger Halal",
-          "Grilled Cheese Sandwich (Vegetarian)",
-          "Grilled Chicken",
-          "Hamburger Rolls (Vegan)",
-          "Leaf Lettuce (Vegan)",
-          "Nashville Hot Chicken Sandwich",
-          "Sliced Red Onions (Vegan)",
-          "Sliced Tomatoes (Vegan)",
-          "Sour Cream (Vegetarian)",
-          "Thick and Chunky Mild Salsa (Vegan)"
+          "Vegetable Edamame Potstickers"
         ],
         "starch_potatoes": [
-          "Shiitake & Scallion Sticky Rice (Vegan)",
-          "Brown Rice (Vegan)",
-          "Alfredo Sauce (Vegetarian)",
-          "Bowtie Pasta (Vegetarian)",
-          "Marinara Spaghetti Sauce (Vegan)"
+          "Shiitake & Scallion Sticky Rice"
         ],
         "vegetables": [
-          "Black Beans (Vegan)",
-          "Butter Beans (Vegan)",
-          "Caesar Salad (Vegetarian)",
-          "Corn Niblets (Vegan)",
-          "Cottage Cheese (Vegetarian)",
-          "Diced Onions (Vegan)",
-          "Grape Tomatoes (Vegan)",
-          "Grilled Tofu (Vegan)",
-          "HUDS Salad Mix (Vegan)",
-          "Hard Cooked Eggs (Vegetarian)",
-          "Hummus (Vegan)",
-          "Kalamata Olives (Vegan)",
-          "Little Leaf Greens (Vegan)",
-          "Pumpkin Seeds (Vegan)",
-          "Quinoa Black Bean and Rost Corn Salad (Vegan)",
-          "Roasted Diced Beets (Vegan)",
-          "Roasted Salmon",
-          "Seasoned Halal Chicken Breast",
-          "Shredded Carrots (Vegan)",
-          "Shredded Cheddar Cheese (Vegetarian)",
-          "Sliced Avocado (Vegan)",
-          "Sliced Cucumbers (Vegan)",
-          "Sorghum (Vegan)",
-          "Steamed Broccoli (Vegan)",
-          "Suntan Pepper Strips (Vegan)",
-          "Tricolor Quinoa (Vegan)",
-          "Vegetable Edamame Potstickers (Vegan)",
-          "Roasted Broccoli (Vegan)",
-          "Roasted Snow Peas & Red Peppers (Vegan)",
-          "Mushrooms, Barley, Kale, with Scallions (Vegan)",
-          "Ginger Soy Sesame Dipping Sauce (Vegan)",
-          "Hoisin Sauce (Vegan)",
-          "Sweet & Sour Sauce (Vegan)"
+          "Roasted Broccoli",
+          "Roasted Snow Peas & Red Peppers"
         ],
         "delish": [],
         "desserts": [
-          "Apple Caramel Cake (Vegetarian)",
-          "Pineapple Soft serve (Vegan)",
-          "Strawberry Soft serve (Vegan)"
+          "Apple Caramel Cake",
+          "Pineapple Soft serve",
+          "Strawberry Soft serve"
         ]
       }
     },
     "2025-11-18": {
       "lunch": {
         "soups": [
-          "Broccoli And Cheddar Soup (Vegetarian)",
-          "Lentil Soup (Vegan)"
+          "Broccoli And Cheddar Soup",
+          "Lentil Soup"
         ],
         "entrees": [
-          "Boom Boom Sauce (Vegetarian)",
-          "Buffalo Chicken Salad",
-          "Cheddar Cheese (Vegetarian)",
-          "Classic Cole Slaw (Vegetarian)",
-          "Kosher Dill Pickle Chips (Vegan)",
-          "Leaf Lettuce (Vegan)",
-          "No Nut Basil Pesto (Vegetarian)",
-          "Roasted Low-Sodium Turkey",
-          "Sliced Ham",
-          "Sliced Red Onions (Vegan)",
-          "Sliced Tomatoes (Vegan)",
-          "Swiss Cheese (Vegetarian)",
-          "Tuna Salad",
-          "Western Style Guacamole (Vegan)",
           "Cumin & Ginger Braised Beef",
           "Grilled Chicken Breast",
           "Saffron Chicken with Lemon & Olives",
-          "Cumin & Ginger Braised Halal Beef",
-          "Strawberry Banana Smoothie (Vegetarian)",
-          "Three Bean Chili (Vegan)"
+          "Falafel Sandwich"
         ],
         "starch_potatoes": [
-          "Herbed Couscous (Vegan)",
-          "Brown Rice (Vegan)"
+          "Herbed Couscous"
         ],
         "vegetables": [
-          "Black Beans (Vegan)",
-          "Butter Beans (Vegan)",
-          "Caesar Salad (Vegetarian)",
-          "Corn Niblets (Vegan)",
-          "Cottage Cheese (Vegetarian)",
-          "Diced Onions (Vegan)",
-          "Grape Tomatoes (Vegan)",
-          "Grilled Tofu (Vegan)",
-          "HUDS Salad Mix (Vegan)",
-          "Hard Cooked Eggs (Vegetarian)",
-          "Hummus (Vegan)",
-          "Kalamata Olives (Vegan)",
-          "Little Leaf Greens (Vegan)",
-          "Quinoa Black Bean and Rost Corn Salad (Vegan)",
-          "Roasted Diced Beets (Vegan)",
-          "Roasted Salmon",
-          "Seasoned Halal Chicken Breast",
-          "Shredded Carrots (Vegan)",
-          "Shredded Cheddar Cheese (Vegetarian)",
-          "Sliced Avocado (Vegan)",
-          "Sliced Cucumbers (Vegan)",
-          "Sorghum (Vegan)",
-          "Steamed Broccoli (Vegan)",
-          "Suntan Pepper Strips (Vegan)",
-          "Tricolor Quinoa (Vegan)",
-          "Falafel Sandwich (Vegan)",
-          "Sauteed Kale (Vegan)",
-          "Za'atar Roasted Baby Carrots (Vegan)",
-          "Roasted Red Pepper & Tomato Chickpeas (Vegan)",
-          "Classic Dinner Roll"
+          "Sauteed Kale",
+          "Za'atar Roasted Baby Carrots"
         ],
-        "delish": [],
+        "delish": [
+          "Strawberry Banana Smoothie"
+        ],
         "desserts": [
-          "Oatmeal Raisin Cookies (Vegetarian)",
-          "Pineapple Soft serve (Vegan)",
-          "Strawberry Soft serve (Vegan)"
+          "Oatmeal Raisin Cookies",
+          "Pineapple Soft serve",
+          "Strawberry Soft serve"
         ]
       },
       "dinner": {
         "soups": [
-          "Broccoli And Cheddar Soup (Vegetarian)",
-          "Lentil Soup (Vegan)"
+          "Broccoli And Cheddar Soup",
+          "Lentil Soup"
         ],
         "entrees": [
           "Butter Chicken",
           "Shrimp In Curry & Coconut Milk",
-          "Butter Chicken(H)",
-          "Boom Boom Sauce (Vegetarian)",
-          "Cage Free Eggs Cooked to Order (Vegetarian)",
-          "Cage-Free Egg Whites Cooked to Order (Vegetarian)",
-          "Cheddar Cheese (Vegetarian)",
-          "Cheese Quesadilla (Vegetarian)",
-          "Crimson Vegan Burger (Vegan)",
-          "Frankfurter Rolls (Vegan)",
-          "French Fries (Vegan)",
-          "Grilled All Beef Old Neighborhood Hot Dog",
-          "Grilled Burger",
-          "Grilled Burger Halal",
-          "Grilled Cheese Sandwich (Vegetarian)",
-          "Grilled Chicken",
-          "Hamburger Rolls (Vegan)",
-          "Leaf Lettuce (Vegan)",
-          "Nashville Hot Chicken Sandwich",
-          "Sliced Red Onions (Vegan)",
-          "Sliced Tomatoes (Vegan)",
-          "Sour Cream (Vegetarian)",
-          "Thick and Chunky Mild Salsa (Vegan)"
+          "Alu Chole"
         ],
         "starch_potatoes": [
-          "Basmati Rice (Vegan)",
-          "Brown Rice (Vegan)",
-          "Marinara Spaghetti Sauce (Vegan)",
-          "Penne Pasta (Vegan)",
-          "Roasted Garlic and Wine Sauce"
+          "Basmati Rice"
         ],
         "vegetables": [
-          "Black Beans (Vegan)",
-          "Butter Beans (Vegan)",
-          "Caesar Salad (Vegetarian)",
-          "Corn Niblets (Vegan)",
-          "Cottage Cheese (Vegetarian)",
-          "Diced Onions (Vegan)",
-          "Grape Tomatoes (Vegan)",
-          "Grilled Tofu (Vegan)",
-          "HUDS Salad Mix (Vegan)",
-          "Hard Cooked Eggs (Vegetarian)",
-          "Hummus (Vegan)",
-          "Kalamata Olives (Vegan)",
-          "Little Leaf Greens (Vegan)",
-          "Quinoa Black Bean and Rost Corn Salad (Vegan)",
-          "Roasted Diced Beets (Vegan)",
-          "Roasted Salmon",
-          "Seasoned Halal Chicken Breast",
-          "Shredded Carrots (Vegan)",
-          "Shredded Cheddar Cheese (Vegetarian)",
-          "Sliced Avocado (Vegan)",
-          "Sliced Cucumbers (Vegan)",
-          "Sorghum (Vegan)",
-          "Steamed Broccoli (Vegan)",
-          "Suntan Pepper Strips (Vegan)",
-          "Tricolor Quinoa (Vegan)",
-          "Alu Chole (Vegan)",
-          "Roasted Cauliflower with Cumin & Cardamom (Vegan)",
-          "Steamed Green Peas (Vegan)",
-          "Makhni Dal (Vegan)",
-          "Naan Bread (Vegetarian)"
+          "Roasted Cauliflower with Cumin & Cardamom",
+          "Steamed Green Peas"
         ],
         "delish": [],
         "desserts": [
-          "Coconut Cardamom Mango Rice Pudding (Vegetarian)",
-          "Pineapple Soft serve (Vegan)",
-          "Strawberry Soft serve (Vegan)"
+          "Coconut Cardamom Mango Rice Pudding",
+          "Pineapple Soft serve",
+          "Strawberry Soft serve"
         ]
       }
     },
     "2025-11-19": {
       "lunch": {
         "soups": [
-          "Carrot Ginger Sesame Soup (Vegan)",
+          "Carrot Ginger Sesame Soup",
           "Italian Meatball Soup"
         ],
         "entrees": [
-          "Boom Boom Sauce (Vegetarian)",
-          "Buffalo Chicken Salad",
-          "Cheddar Cheese (Vegetarian)",
-          "Classic Cole Slaw (Vegetarian)",
-          "Kosher Dill Pickle Chips (Vegan)",
-          "Leaf Lettuce (Vegan)",
-          "No Nut Basil Pesto (Vegetarian)",
-          "Roasted Low-Sodium Turkey",
-          "Sliced Ham",
-          "Sliced Red Onions (Vegan)",
-          "Sliced Tomatoes (Vegan)",
-          "Swiss Cheese (Vegetarian)",
-          "Tuna Salad",
-          "Western Style Guacamole (Vegan)",
           "Chili and Lime Chicken",
           "Grilled Chicken Breast",
           "Shrimp & Monterey Jack Quesadilla with Peppers & Tomato",
-          "Chefs Choice Delish Smoothie (Vegetarian)",
-          "Chicken Chili with Beans"
+          "Plant Sausage, Corn and Black Bean Quesadilla"
         ],
         "starch_potatoes": [
-          "Rice with Cumin & Serrano Peppers (Vegan)",
-          "Brown Rice (Vegan)"
+          "Rice with Cumin & Serrano Peppers"
         ],
         "vegetables": [
-          "Black Beans (Vegan)",
-          "Butter Beans (Vegan)",
-          "Caesar Salad (Vegetarian)",
-          "Corn Niblets (Vegan)",
-          "Cottage Cheese (Vegetarian)",
-          "Diced Onions (Vegan)",
-          "Grape Tomatoes (Vegan)",
-          "Grilled Tofu (Vegan)",
-          "HUDS Salad Mix (Vegan)",
-          "Hard Cooked Eggs (Vegetarian)",
-          "Hummus (Vegan)",
-          "Kalamata Olives (Vegan)",
-          "Little Leaf Greens (Vegan)",
-          "Quinoa Black Bean and Rost Corn Salad (Vegan)",
-          "Roasted Diced Beets (Vegan)",
-          "Roasted Salmon",
-          "Seasoned Halal Chicken Breast",
-          "Shredded Carrots (Vegan)",
-          "Shredded Cheddar Cheese (Vegetarian)",
-          "Sliced Avocado (Vegan)",
-          "Sliced Cucumbers (Vegan)",
-          "Sorghum (Vegan)",
-          "Steamed Broccoli (Vegan)",
-          "Suntan Pepper Strips (Vegan)",
-          "Tabbouleh Salad (Vegan)",
-          "Tricolor Quinoa (Vegan)",
-          "Plant Sausage, Corn and Black Bean Quesadilla (Vegan)",
-          "Roasted Corn, Zucchini, & Red Onion (Vegan)",
-          "Chipotle Braised Pinto Beans (Vegan)",
-          "Biscuit (Vegetarian)"
+          "Roasted Corn, Zucchini, & Red Onion",
+          "Steamed Broccoli"
         ],
-        "delish": [],
+        "delish": [
+          "Chefs Choice Delish Smoothie"
+        ],
         "desserts": [
-          "Carnival Cookie (Vegetarian)",
-          "Pineapple Soft serve (Vegan)",
-          "Strawberry Soft serve (Vegan)"
+          "Carnival Cookie",
+          "Pineapple Soft serve",
+          "Strawberry Soft serve"
         ]
       },
       "dinner": {
         "soups": [
-          "Carrot Ginger Sesame Soup (Vegan)",
+          "Carrot Ginger Sesame Soup",
           "Italian Meatball Soup"
         ],
         "entrees": [
           "Halal Rosemary Lemon Garlic Roasted Chicken",
           "Oven Baked Greek Catch of Day",
-          "Boom Boom Sauce (Vegetarian)",
-          "Cage Free Eggs Cooked to Order (Vegetarian)",
-          "Cage-Free Egg Whites Cooked to Order (Vegetarian)",
-          "Cheddar Cheese (Vegetarian)",
-          "Cheese Quesadilla (Vegetarian)",
-          "Crimson Vegan Burger (Vegan)",
-          "Frankfurter Rolls (Vegan)",
-          "French Fries (Vegan)",
-          "Grilled All Beef Old Neighborhood Hot Dog",
-          "Grilled Burger",
-          "Grilled Burger Halal",
-          "Grilled Cheese Sandwich (Vegetarian)",
-          "Grilled Chicken",
-          "Hamburger Rolls (Vegan)",
-          "Leaf Lettuce (Vegan)",
-          "Nashville Hot Chicken Sandwich",
-          "Sliced Red Onions (Vegan)",
-          "Sliced Tomatoes (Vegan)",
-          "Sour Cream (Vegetarian)",
-          "Thick and Chunky Mild Salsa (Vegan)"
+          "Mediterranean Sweet Potato and Chick Peas"
         ],
         "starch_potatoes": [
-          "Baked Potatoes (Vegan)",
-          "Brown Rice (Vegan)",
-          "Marinara Spaghetti Sauce (Vegan)",
-          "Roasted Garlic and Wine Sauce",
-          "Ziti (Vegan)"
+          "Baked Potatoes"
         ],
         "vegetables": [
-          "Black Beans (Vegan)",
-          "Butter Beans (Vegan)",
-          "Caesar Salad (Vegetarian)",
-          "Corn Niblets (Vegan)",
-          "Cottage Cheese (Vegetarian)",
-          "Diced Onions (Vegan)",
-          "Grape Tomatoes (Vegan)",
-          "Grilled Tofu (Vegan)",
-          "HUDS Salad Mix (Vegan)",
-          "Hard Cooked Eggs (Vegetarian)",
-          "Hummus (Vegan)",
-          "Kalamata Olives (Vegan)",
-          "Little Leaf Greens (Vegan)",
-          "Quinoa Black Bean and Rost Corn Salad (Vegan)",
-          "Roasted Diced Beets (Vegan)",
-          "Roasted Salmon",
-          "Seasoned Halal Chicken Breast",
-          "Shredded Carrots (Vegan)",
-          "Shredded Cheddar Cheese (Vegetarian)",
-          "Sliced Avocado (Vegan)",
-          "Sliced Cucumbers (Vegan)",
-          "Sorghum (Vegan)",
-          "Steamed Broccoli (Vegan)",
-          "Suntan Pepper Strips (Vegan)",
-          "Tabbouleh Salad (Vegan)",
-          "Tricolor Quinoa (Vegan)",
-          "Mediterranean Sweet Potato and Chick Peas (Vegan)",
-          "Olive Oil & Oregano Roasted Vegetables (Vegan)",
-          "Steamed Spinach (Vegan)",
-          "Cannellini Beans w/ Chive (Vegan)",
-          "Chopped Scallions (Vegan)",
-          "Sour Cream (Vegetarian)"
+          "Olive Oil & Oregano Roasted Vegetables",
+          "Steamed Spinach"
         ],
         "delish": [],
         "desserts": [
-          "Carrot, Walnut Cake with Cream Cheese Icing (Vegetarian)",
-          "Pineapple Soft serve (Vegan)",
-          "Strawberry Soft serve (Vegan)"
+          "Carrot, Walnut Cake with Cream Cheese Icing",
+          "Pineapple Soft serve",
+          "Strawberry Soft serve"
         ]
       }
     },
@@ -456,156 +167,53 @@
       "lunch": {
         "soups": [
           "Chicken Noodle Soup",
-          "Sweet Potato Chipotle (Vegan)"
+          "Sweet Potato Chipotle"
         ],
         "entrees": [
-          "Boom Boom Sauce (Vegetarian)",
-          "Buffalo Chicken Salad",
-          "Cheddar Cheese (Vegetarian)",
-          "Classic Cole Slaw (Vegetarian)",
-          "Kosher Dill Pickle Chips (Vegan)",
-          "Leaf Lettuce (Vegan)",
-          "No Nut Basil Pesto (Vegetarian)",
-          "Roasted Low-Sodium Turkey",
-          "Sliced Ham",
-          "Sliced Red Onions (Vegan)",
-          "Sliced Tomatoes (Vegan)",
-          "Swiss Cheese (Vegetarian)",
-          "Tuna Salad",
-          "Western Style Guacamole (Vegan)",
-          "Cheese Pizza (Vegetarian)",
+          "Cheese Pizza",
           "Grilled Chicken Breast",
           "Penne Chicken and Broccoli Alfredo",
           "Pepperoni Pizza",
-          "Portobello & Eggplant Parm (Vegan)",
-          "Chefs Choice Housemade Smoothie",
-          "Beef Chili"
+          "Portobello & Eggplant Parm"
         ],
         "starch_potatoes": [
-          "Lemon Herbed Orzo (Vegan)",
-          "Brown Rice (Vegan)"
+          "Lemon Herbed Orzo"
         ],
         "vegetables": [
-          "Black Beans (Vegan)",
-          "Butter Beans (Vegan)",
-          "Caesar Salad (Vegetarian)",
-          "Corn Niblets (Vegan)",
-          "Cottage Cheese (Vegetarian)",
-          "Diced Onions (Vegan)",
-          "Grape Tomatoes (Vegan)",
-          "Grilled Tofu (Vegan)",
-          "HUDS Salad Mix (Vegan)",
-          "Hard Cooked Eggs (Vegetarian)",
-          "Hummus (Vegan)",
-          "Kalamata Olives (Vegan)",
-          "Little Leaf Greens (Vegan)",
-          "Quinoa Black Bean and Rost Corn Salad (Vegan)",
-          "Roasted Diced Beets (Vegan)",
-          "Roasted Salmon",
-          "Seasoned Halal Chicken Breast",
-          "Shredded Carrots (Vegan)",
-          "Shredded Cheddar Cheese (Vegetarian)",
-          "Sliced Avocado (Vegan)",
-          "Sliced Cucumbers (Vegan)",
-          "Sorghum (Vegan)",
-          "Steamed Broccoli (Vegan)",
-          "Suntan Pepper Strips (Vegan)",
-          "Tabbouleh Salad (Vegan)",
-          "Tricolor Quinoa (Vegan)",
-          "Portobello & Eggplant Parm (Vegan)",
-          "Roasted Local Seasonal Squash (Vegan)",
-          "Steamed Broccoli, Carrots and Cauliflower (Vegan)",
-          "Ditalini & Kidney Bean Stew (Vegan)",
-          "Warm Buttermilk Cornbread (Vegetarian)"
+          "Roasted Local Seasonal Squash",
+          "Steamed Broccoli, Carrots and Cauliflower"
         ],
-        "delish": [],
+        "delish": [
+          "Chefs Choice Housemade Smoothie"
+        ],
         "desserts": [
-          "Chocolate Chip Cookies (Vegetarian)",
-          "Pineapple Soft serve (Vegan)",
-          "Strawberry Soft serve (Vegan)"
+          "Chocolate Chip Cookies",
+          "Pineapple Soft serve",
+          "Strawberry Soft serve"
         ]
       },
       "dinner": {
         "soups": [
           "Chicken Noodle Soup",
-          "Sweet Potato Chipotle (Vegan)"
+          "Sweet Potato Chipotle"
         ],
         "entrees": [
           "Pork Belly",
           "Soy Glazed Chicken",
-          "Shoyu Marinated Tofu (Vegan)",
-          "Boom Boom Sauce (Vegetarian)",
-          "Cage Free Eggs Cooked to Order (Vegetarian)",
-          "Cage-Free Egg Whites Cooked to Order (Vegetarian)",
-          "Cheddar Cheese (Vegetarian)",
-          "Cheese Quesadilla (Vegetarian)",
-          "Crimson Vegan Burger (Vegan)",
-          "Frankfurter Rolls (Vegan)",
-          "French Fries (Vegan)",
-          "Grilled All Beef Old Neighborhood Hot Dog",
-          "Grilled Burger",
-          "Grilled Burger Halal",
-          "Grilled Cheese Sandwich (Vegetarian)",
-          "Grilled Chicken",
-          "Hamburger Rolls (Vegan)",
-          "Leaf Lettuce (Vegan)",
-          "Nashville Hot Chicken Sandwich",
-          "Sliced Red Onions (Vegan)",
-          "Sliced Tomatoes (Vegan)",
-          "Thick and Chunky Mild Salsa (Vegan)"
+          "Shoyu Marinated Tofu"
         ],
         "starch_potatoes": [
-          "Ramen Noodles (Vegetarian)",
-          "Brown Rice (Vegan)",
-          "Bowtie Pasta (Vegetarian)",
-          "Creamy Basil Pesto Sauce (Vegetarian)",
-          "Marinara Spaghetti Sauce (Vegan)"
+          "Ramen Noodles"
         ],
         "vegetables": [
-          "Black Beans (Vegan)",
-          "Butter Beans (Vegan)",
-          "Caesar Salad (Vegetarian)",
-          "Corn Niblets (Vegan)",
-          "Cottage Cheese (Vegetarian)",
-          "Diced Onions (Vegan)",
-          "Grape Tomatoes (Vegan)",
-          "Grilled Tofu (Vegan)",
-          "HUDS Salad Mix (Vegan)",
-          "Hard Cooked Eggs (Vegetarian)",
-          "Hummus (Vegan)",
-          "Kalamata Olives (Vegan)",
-          "Little Leaf Greens (Vegan)",
-          "Quinoa Black Bean and Rost Corn Salad (Vegan)",
-          "Roasted Diced Beets (Vegan)",
-          "Roasted Salmon",
-          "Seasoned Halal Chicken Breast",
-          "Shredded Carrots (Vegan)",
-          "Shredded Cheddar Cheese (Vegetarian)",
-          "Sliced Avocado (Vegan)",
-          "Sliced Cucumbers (Vegan)",
-          "Sorghum (Vegan)",
-          "Steamed Broccoli (Vegan)",
-          "Suntan Pepper Strips (Vegan)",
-          "Tabbouleh Salad (Vegan)",
-          "Tricolor Quinoa (Vegan)",
-          "Shoyu Marinated Tofu (Vegan)",
-          "Bok Choy (Vegan)",
-          "Steamed Corn (Vegan)",
-          "Shanso Sesame Edamame (Vegan)",
-          "Bamboo Shoots (Vegan)",
-          "Bean Sprouts (Vegan)",
-          "Chopped Scallions (Vegan)",
-          "Nori (Vegan)",
-          "Pork Ramen Broth",
-          "Sesame Seed Oil (Vegan)",
-          "Shoyu Marinated Egg",
-          "Vegetable Broth (Vegan)"
+          "Bok Choy",
+          "Steamed Corn"
         ],
         "delish": [],
         "desserts": [
-          "Pineapple Soft serve (Vegan)",
-          "Salted Caramel Cake (Vegetarian)",
-          "Strawberry Soft serve (Vegan)"
+          "Pineapple Soft serve",
+          "Salted Caramel Cake",
+          "Strawberry Soft serve"
         ]
       }
     },
@@ -613,297 +221,103 @@
       "lunch": {
         "soups": [
           "New England Clam Chowder",
-          "Roasted Vegetable Soup (Vegan)"
+          "Roasted Vegetable Soup"
         ],
         "entrees": [
-          "Boom Boom Sauce (Vegetarian)",
-          "Buffalo Chicken Salad",
-          "Cheddar Cheese (Vegetarian)",
-          "Classic Cole Slaw (Vegetarian)",
-          "Kosher Dill Pickle Chips (Vegan)",
-          "Leaf Lettuce (Vegan)",
-          "No Nut Basil Pesto (Vegetarian)",
-          "Roasted Low-Sodium Turkey",
-          "Sliced Ham",
-          "Sliced Red Onions (Vegan)",
-          "Sliced Tomatoes (Vegan)",
-          "Swiss Cheese (Vegetarian)",
-          "Tuna Salad",
-          "Western Style Guacamole (Vegan)",
           "Battered & Fried Locally Caught Fresh Fish",
           "Chicken Fajitas Cheesesteak",
           "Grilled Chicken Breast",
-          "Chefs Choice Delish Smoothie (Vegetarian)",
-          "Three Bean Chili (Vegan)"
+          "Stewed Garbanzo with Tomato and Spinach"
         ],
         "starch_potatoes": [
-          "Waffle Fries (Vegan)",
-          "Brown Rice (Vegan)"
+          "Waffle Fries"
         ],
         "vegetables": [
-          "Black Beans (Vegan)",
-          "Butter Beans (Vegan)",
-          "Caesar Salad (Vegetarian)",
-          "Corn Niblets (Vegan)",
-          "Cottage Cheese (Vegetarian)",
-          "Diced Onions (Vegan)",
-          "Grape Tomatoes (Vegan)",
-          "Grilled Tofu (Vegan)",
-          "HUDS Salad Mix (Vegan)",
-          "Hard Cooked Eggs (Vegetarian)",
-          "Hummus (Vegan)",
-          "Kalamata Olives (Vegan)",
-          "Little Leaf Greens (Vegan)",
-          "Quinoa Black Bean and Rost Corn Salad (Vegan)",
-          "Roasted Diced Beets (Vegan)",
-          "Roasted Salmon",
-          "Seasoned Halal Chicken Breast",
-          "Shredded Carrots (Vegan)",
-          "Shredded Cheddar Cheese (Vegetarian)",
-          "Sliced Avocado (Vegan)",
-          "Sliced Cucumbers (Vegan)",
-          "Sorghum (Vegan)",
-          "Steamed Broccoli (Vegan)",
-          "Suntan Pepper Strips (Vegan)",
-          "Tabbouleh Salad (Vegan)",
-          "Tricolor Quinoa (Vegan)",
-          "Stewed Garbanzo with Tomato and Spinach (Vegan)",
-          "Maple Roasted Beets (Vegan)",
-          "Sauteed Kale with Cranberries & Balsamic Glaze (Vegan)",
-          "Boston Baked Beans (Vegan)",
-          "Kings Hawaiian (Vegetarian)",
-          "Lemon Wedges (Vegan)",
-          "Tartar Sauce (Vegetarian)"
+          "Maple Roasted Beets",
+          "Sauteed Kale with Cranberries & Balsamic Glaze"
         ],
-        "delish": [],
+        "delish": [
+          "Chefs Choice Delish Smoothie"
+        ],
         "desserts": [
-          "Pineapple Soft serve (Vegan)",
-          "Strawberry Soft serve (Vegan)",
-          "Sugar Cookie (Vegetarian)"
+          "Pineapple Soft serve",
+          "Strawberry Soft serve",
+          "Sugar Cookie"
         ]
       },
       "dinner": {
         "soups": [
           "New England Clam Chowder",
-          "Roasted Vegetable Soup (Vegan)"
+          "Roasted Vegetable Soup"
         ],
         "entrees": [
           "Shrimp and Andouille Sausage Etouffee",
           "Spicy Cajun Chicken",
-          "Spicy Cajun Halal Chicken (H)",
-          "Boom Boom Sauce (Vegetarian)",
-          "Cage Free Eggs Cooked to Order (Vegetarian)",
-          "Cage-Free Egg Whites Cooked to Order (Vegetarian)",
-          "Cheddar Cheese (Vegetarian)",
-          "Cheese Quesadilla (Vegetarian)",
-          "Crimson Vegan Burger (Vegan)",
-          "Frankfurter Rolls (Vegan)",
-          "French Fries (Vegan)",
-          "Grilled All Beef Old Neighborhood Hot Dog",
-          "Grilled Burger",
-          "Grilled Burger Halal",
-          "Grilled Cheese Sandwich (Vegetarian)",
-          "Grilled Chicken",
-          "Hamburger Rolls (Vegan)",
-          "Leaf Lettuce (Vegan)",
-          "Nashville Hot Chicken Sandwich",
-          "Sliced Red Onions (Vegan)",
-          "Sliced Tomatoes (Vegan)",
-          "Sour Cream (Vegetarian)",
-          "Thick and Chunky Mild Salsa (Vegan)"
+          "Kelp and Chickpea Po Boy"
         ],
         "starch_potatoes": [
-          "Cheesy Grits (Vegetarian)",
-          "Brown Rice (Vegan)",
-          "Alfredo Sauce (Vegetarian)",
-          "Marinara Spaghetti Sauce (Vegan)",
-          "Shells (Vegetarian)"
+          "Cheesy Grits"
         ],
         "vegetables": [
-          "Black Beans (Vegan)",
-          "Butter Beans (Vegan)",
-          "Caesar Salad (Vegetarian)",
-          "Corn Niblets (Vegan)",
-          "Cottage Cheese (Vegetarian)",
-          "Diced Onions (Vegan)",
-          "Grape Tomatoes (Vegan)",
-          "Grilled Tofu (Vegan)",
-          "HUDS Salad Mix (Vegan)",
-          "Hard Cooked Eggs (Vegetarian)",
-          "Hummus (Vegan)",
-          "Kalamata Olives (Vegan)",
-          "Little Leaf Greens (Vegan)",
-          "Quinoa Black Bean and Rost Corn Salad (Vegan)",
-          "Roasted Diced Beets (Vegan)",
-          "Roasted Salmon",
-          "Seasoned Halal Chicken Breast",
-          "Shredded Carrots (Vegan)",
-          "Shredded Cheddar Cheese (Vegetarian)",
-          "Sliced Avocado (Vegan)",
-          "Sliced Cucumbers (Vegan)",
-          "Sorghum (Vegan)",
-          "Steamed Broccoli (Vegan)",
-          "Suntan Pepper Strips (Vegan)",
-          "Tabbouleh Salad (Vegan)",
-          "Tricolor Quinoa (Vegan)",
-          "Kelp and Chickpea Po Boy (Vegan)",
-          "Roasted Okra, Onions and Tomato (Vegan)",
-          "Spicy Cane Syrup Glazed Winter Squash (Vegan)",
-          "Black-Eyed Pea and Peppers (Vegan)"
+          "Roasted Okra, Onions and Tomato",
+          "Spicy Cane Syrup Glazed Winter Squash"
         ],
         "delish": [],
         "desserts": [
-          "Maple and Apple Bread Pudding (Vegetarian)",
-          "Pineapple Soft serve (Vegan)",
-          "Strawberry Soft serve (Vegan)",
-          "Whipped Topping (Vegetarian)"
+          "Maple and Apple Bread Pudding",
+          "Pineapple Soft serve",
+          "Strawberry Soft serve",
+          "Whipped Topping"
         ]
       }
     },
     "2025-11-22": {
       "lunch": {
         "soups": [
-          "Black Bean Soup (Vegan)",
+          "Black Bean Soup",
           "Chicken Tortilla Soup"
         ],
         "entrees": [
-          "Boom Boom Sauce (Vegetarian)",
-          "Buffalo Chicken Salad",
-          "Cheddar Cheese (Vegetarian)",
-          "Classic Cole Slaw (Vegetarian)",
-          "Kosher Dill Pickle Chips (Vegan)",
-          "Leaf Lettuce (Vegan)",
-          "No Nut Basil Pesto (Vegetarian)",
-          "Roasted Low-Sodium Turkey",
-          "Sliced Ham",
-          "Sliced Red Onions (Vegan)",
-          "Sliced Tomatoes (Vegan)",
-          "Swiss Cheese (Vegetarian)",
-          "Tuna Salad",
-          "Western Style Guacamole (Vegan)",
           "Grilled Chicken Breast",
           "Grilled Reuben Sandwich",
-          "Chipotle Chicken (H)",
-          "Quinoa and Sweet Potato Chili (Vegetarian)"
+          "Roasted Tofu with Tomato and Basil and Vegan Cheese"
         ],
         "starch_potatoes": [
-          "Curly French Fries (Vegan)",
-          "Brown Rice (Vegan)"
+          "Curly French Fries"
         ],
         "vegetables": [
-          "Black Beans (Vegan)",
-          "Butter Beans (Vegan)",
-          "Caesar Salad (Vegetarian)",
-          "Corn Niblets (Vegan)",
-          "Cottage Cheese (Vegetarian)",
-          "Diced Onions (Vegan)",
-          "Grape Tomatoes (Vegan)",
-          "Grilled Tofu (Vegan)",
-          "HUDS Salad Mix (Vegan)",
-          "Hard Cooked Eggs (Vegetarian)",
-          "Hummus (Vegan)",
-          "Kalamata Olives (Vegan)",
-          "Little Leaf Greens (Vegan)",
-          "Quinoa Black Bean and Rost Corn Salad (Vegan)",
-          "Roasted Diced Beets (Vegan)",
-          "Roasted Salmon",
-          "Seasoned Halal Chicken Breast",
-          "Shredded Carrots (Vegan)",
-          "Shredded Cheddar Cheese (Vegetarian)",
-          "Sliced Avocado (Vegan)",
-          "Sliced Cucumbers (Vegan)",
-          "Sorghum (Vegan)",
-          "Steamed Broccoli (Vegan)",
-          "Suntan Pepper Strips (Vegan)",
-          "Tabbouleh Salad (Vegan)",
-          "Tricolor Quinoa (Vegan)",
-          "Roasted Tofu with Tomato and Basil and Vegan Cheese (Vegan)",
-          "Chefs Choice (Vegan)",
-          "Barley Hash (Vegan)",
-          "Warm Buttermilk Cornbread (Vegetarian)"
+          "Chefs Choice",
+          "Steamed Broccoli"
         ],
         "delish": [],
         "desserts": [
-          "Double Chocolate Chip Cookies (Vegetarian)",
-          "Pineapple Soft serve (Vegan)",
-          "Strawberry Soft serve (Vegan)"
+          "Double Chocolate Chip Cookies",
+          "Pineapple Soft serve",
+          "Strawberry Soft serve"
         ]
       },
       "dinner": {
         "soups": [
-          "Black Bean Soup (Vegan)",
+          "Black Bean Soup",
           "Chicken Tortilla Soup"
         ],
         "entrees": [
           "Chicken Piccatta",
           "Meatballs in Marinara Sauce",
-          "Halal Meatballs in Marinara Sauce",
-          "Boom Boom Sauce (Vegetarian)",
-          "Cage Free Eggs Cooked to Order (Vegetarian)",
-          "Cage-Free Egg Whites Cooked to Order (Vegetarian)",
-          "Cheddar Cheese (Vegetarian)",
-          "Cheese Quesadilla (Vegetarian)",
-          "Crimson Vegan Burger (Vegan)",
-          "Frankfurter Rolls (Vegan)",
-          "French Fries (Vegan)",
-          "Grilled All Beef Old Neighborhood Hot Dog",
-          "Grilled Burger",
-          "Grilled Burger Halal",
-          "Grilled Cheese Sandwich (Vegetarian)",
-          "Grilled Chicken",
-          "Hamburger Rolls (Vegan)",
-          "Leaf Lettuce (Vegan)",
-          "Nashville Hot Chicken Sandwich",
-          "Sliced Red Onions (Vegan)",
-          "Sliced Tomatoes (Vegan)",
-          "Sour Cream (Vegetarian)",
-          "Thick and Chunky Mild Salsa (Vegan)"
+          "Vegetarian Meatballs"
         ],
         "starch_potatoes": [
-          "Spaghetti (Vegan)",
-          "Brown Rice (Vegan)",
-          "Bolognese Sauce with Meat",
-          "Marinara Spaghetti Sauce (Vegan)",
-          "Ziti (Vegan)"
+          "Spaghetti"
         ],
         "vegetables": [
-          "Black Beans (Vegan)",
-          "Butter Beans (Vegan)",
-          "Caesar Salad (Vegetarian)",
-          "Corn Niblets (Vegan)",
-          "Cottage Cheese (Vegetarian)",
-          "Diced Onions (Vegan)",
-          "Grape Tomatoes (Vegan)",
-          "Grilled Tofu (Vegan)",
-          "HUDS Salad Mix (Vegan)",
-          "Hard Cooked Eggs (Vegetarian)",
-          "Hummus (Vegan)",
-          "Kalamata Olives (Vegan)",
-          "Little Leaf Greens (Vegan)",
-          "Quinoa Black Bean and Rost Corn Salad (Vegan)",
-          "Roasted Diced Beets (Vegan)",
-          "Roasted Salmon",
-          "Seasoned Halal Chicken Breast",
-          "Shredded Carrots (Vegan)",
-          "Shredded Cheddar Cheese (Vegetarian)",
-          "Sliced Avocado (Vegan)",
-          "Sliced Cucumbers (Vegan)",
-          "Sorghum (Vegan)",
-          "Steamed Broccoli (Vegan)",
-          "Suntan Pepper Strips (Vegan)",
-          "Tabbouleh Salad (Vegan)",
-          "Tricolor Quinoa (Vegan)",
-          "Vegetarian Meatballs (Vegetarian)",
-          "Herb Grilled Zucchini with Balsamic Glaze (Vegan)",
-          "Steamed Green Peas (Vegan)",
-          "White Beans with Broccoli Rabe and Lemon (Vegan)",
-          "Roll Calise (Vegan)"
+          "Herb Grilled Zucchini with Balsamic Glaze",
+          "Steamed Green Peas"
         ],
         "delish": [],
         "desserts": [
-          "Pineapple Soft serve (Vegan)",
-          "Strawberry Soft serve (Vegan)",
-          "Tiramisu (Vegetarian)"
+          "Pineapple Soft serve",
+          "Strawberry Soft serve",
+          "Tiramisu"
         ]
       }
     },
@@ -911,143 +325,55 @@
       "lunch": {
         "soups": [
           "Buffalo Chicken Soup",
-          "White Bean and Escarole (Vegan)"
+          "White Bean and Escarole"
         ],
         "entrees": [
           "Grilled Chicken Breast",
-          "Smoked Salmon",
-          "Turkey and Bean Chili",
-          "Warm Buttermilk Cornbread (Vegetarian)"
+          "Vegan Cumin and Chili Spiced Quinoa"
         ],
-        "starch_potatoes": [
-          "Brown Rice (Vegan)"
-        ],
+        "starch_potatoes": [],
         "vegetables": [
-          "Black Beans (Vegan)",
-          "Butter Beans (Vegan)",
-          "Caesar Salad (Vegetarian)",
-          "Corn Niblets (Vegan)",
-          "Cottage Cheese (Vegetarian)",
-          "Diced Onions (Vegan)",
-          "Grape Tomatoes (Vegan)",
-          "Grilled Tofu (Vegan)",
-          "HUDS Salad Mix (Vegan)",
-          "Hard Cooked Eggs (Vegetarian)",
-          "Hummus (Vegan)",
-          "Kalamata Olives (Vegan)",
-          "Little Leaf Greens (Vegan)",
-          "Quinoa Black Bean and Rost Corn Salad (Vegan)",
-          "Roasted Diced Beets (Vegan)",
-          "Roasted Salmon",
-          "Seasoned Halal Chicken Breast",
-          "Shredded Carrots (Vegan)",
-          "Shredded Cheddar Cheese (Vegetarian)",
-          "Sliced Avocado (Vegan)",
-          "Sliced Cucumbers (Vegan)",
-          "Sorghum (Vegan)",
-          "Steamed Broccoli (Vegan)",
-          "Suntan Pepper Strips (Vegan)",
-          "Tabbouleh Salad (Vegan)",
-          "Tricolor Quinoa (Vegan)",
-          "Vegan Cumin and Chili Spiced Quinoa (Vegan)",
-          "Roasted Corn & Black Beans (Vegan)",
-          "Farro with Cumin-Scented Kale & Sweet Potato (Vegan)",
-          "Flour Tortillas (Vegan)",
-          "Guacamole (Vegan)",
-          "Sour Cream (Vegetarian)",
-          "Thick and Chunky Mild Salsa (Vegan)"
+          "Roasted Corn & Black Beans"
         ],
         "delish": [],
         "desserts": [
-          "Chocolate Chip Cookies (Vegetarian)",
-          "Pineapple Soft serve (Vegan)",
-          "Strawberry Soft serve (Vegan)"
+          "Chocolate Chip Cookies",
+          "Pineapple Soft serve",
+          "Strawberry Soft serve"
         ]
       },
       "dinner": {
         "soups": [
           "Buffalo Chicken Soup",
-          "White Bean and Escarole (Vegan)"
+          "White Bean and Escarole"
         ],
         "entrees": [
           "BBQ Chicken",
           "Honey Glazed Ribs",
-          "Halal BBQ Chicken",
-          "Boom Boom Sauce (Vegetarian)",
-          "Cage Free Eggs Cooked to Order (Vegetarian)",
-          "Cage-Free Egg Whites Cooked to Order (Vegetarian)",
-          "Cheddar Cheese (Vegetarian)",
-          "Cheese Quesadilla (Vegetarian)",
-          "Crimson Vegan Burger (Vegan)",
-          "Frankfurter Rolls (Vegan)",
-          "French Fries (Vegan)",
-          "Grilled All Beef Old Neighborhood Hot Dog",
-          "Grilled Burger",
-          "Grilled Burger Halal",
-          "Grilled Cheese Sandwich (Vegetarian)",
-          "Grilled Chicken",
-          "Hamburger Rolls (Vegan)",
-          "Leaf Lettuce (Vegan)",
-          "Nashville Hot Chicken Sandwich",
-          "Sliced Red Onions (Vegan)",
-          "Sliced Tomatoes (Vegan)",
-          "Sour Cream (Vegetarian)",
-          "Thick and Chunky Mild Salsa (Vegan)"
+          "Three Bean & Plant Based Chorizo Chili"
         ],
         "starch_potatoes": [
-          "Macaroni and Cheese (Vegetarian)",
-          "Brown Rice (Vegan)",
-          "Marinara Spaghetti Sauce (Vegan)",
-          "Penne Pasta (Vegan)",
-          "Roasted Garlic and Wine Sauce"
+          "Macaroni and Cheese"
         ],
         "vegetables": [
-          "Black Beans (Vegan)",
-          "Butter Beans (Vegan)",
-          "Caesar Salad (Vegetarian)",
-          "Corn Niblets (Vegan)",
-          "Cottage Cheese (Vegetarian)",
-          "Diced Onions (Vegan)",
-          "Grape Tomatoes (Vegan)",
-          "Grilled Tofu (Vegan)",
-          "HUDS Salad Mix (Vegan)",
-          "Hard Cooked Eggs (Vegetarian)",
-          "Hummus (Vegan)",
-          "Kalamata Olives (Vegan)",
-          "Little Leaf Greens (Vegan)",
-          "Quinoa Black Bean and Rost Corn Salad (Vegan)",
-          "Roasted Diced Beets (Vegan)",
-          "Roasted Salmon",
-          "Seasoned Halal Chicken Breast",
-          "Shredded Carrots (Vegan)",
-          "Shredded Cheddar Cheese (Vegetarian)",
-          "Sliced Avocado (Vegan)",
-          "Sliced Cucumbers (Vegan)",
-          "Sorghum (Vegan)",
-          "Steamed Broccoli (Vegan)",
-          "Suntan Pepper Strips (Vegan)",
-          "Tabbouleh Salad (Vegan)",
-          "Tricolor Quinoa (Vegan)",
-          "Three Bean & Plant Based Chorizo Chili (Vegan)",
-          "Maple Glazed Carrots with Cinnamon and Ginger (Vegan)",
-          "Ranch Braised Cabbage (Vegan)",
-          "Wheat Berries, Dried Plums & Green Onion (Vegan)"
+          "Maple Glazed Carrots with Cinnamon and Ginger",
+          "Ranch Braised Cabbage"
         ],
         "delish": [],
         "desserts": [
-          "Banana (Vegan)",
-          "Butterscotch Topping (Vegetarian)",
-          "Caramel Dessert Sauce (Vegetarian)",
-          "Chocolate Ice Cream (Vegetarian)",
-          "Hood Vanilla Ice Cream (Vegetarian)",
-          "Hot Fudge (Vegetarian)",
-          "Lactaid Ice Cream (Vegetarian)",
-          "Maraschino Cherry Halves (Vegan)",
-          "Pineapple Soft serve (Vegan)",
-          "Plain M&M Topping (Vegetarian)",
-          "Rainbow Sprinkles (Vegan)",
-          "Strawberry Soft serve (Vegan)",
-          "Whipped Topping (Vegetarian)"
+          "Banana",
+          "Butterscotch Topping",
+          "Caramel Dessert Sauce",
+          "Chocolate Ice Cream",
+          "Hood Vanilla Ice Cream",
+          "Hot Fudge",
+          "Lactaid Ice Cream",
+          "Maraschino Cherry Halves",
+          "Pineapple Soft serve",
+          "Plain M&M Topping",
+          "Rainbow Sprinkles",
+          "Strawberry Soft serve",
+          "Whipped Topping"
         ]
       }
     }

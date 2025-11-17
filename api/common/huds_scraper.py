@@ -45,7 +45,7 @@ def _normalize_text(s: str) -> str:
 def _classify_category(cat_raw: str) -> Optional[str]:
     """Map a HUDS category label to one of our normalized buckets.
     The incoming text usually looks like "-- Salad Bar --". We strip dashes and lowercase.
-    We purposefully keep only lunch/dinner relevant buckets (breakfast ignored).
+    We only include main meal components (soups, entrees, sides, desserts).
     """
     if not cat_raw:
         return None
@@ -53,20 +53,37 @@ def _classify_category(cat_raw: str) -> Optional[str]:
     # remove leading/trailing dashes and spaces
     cat = re.sub(r"^-+|-+$", "", cat).strip()
     cat = cat.replace("--", "").strip()
-    # heuristics
-    if "soup" in cat:
+    
+    # Only include these specific categories with exact matches:
+    
+    # Soups - only "Today's Soup"
+    if cat == "today's soup":
         return "soups"
-    if any(k in cat for k in ["entree", "entrée", "grill", "halal", "chili", "stew", "sand/ deli", "sand/", "deli"]):
+    
+    # Entrees - main dishes only
+    if cat in ["entrees", "entrée", "veg,vegan"]:
         return "entrees"
-    if any(k in cat for k in ["starch", "potato", "rice", "pasta", "brown rice", "whole grain", "macaroni"]):
+    
+    # Starch & Potatoes - only the exact category name
+    if cat == "starch and potatoes":
         return "starch_potatoes"
-    if any(k in cat for k in ["vegetable", "veg,vegan", "vegetables", "salad bar", "plant protein", "sides", "misc", "bagel"]):
+    
+    # Vegetables - only the exact "Vegetables" category
+    if cat == "vegetables":
         return "vegetables"
-    if "delish" in cat:
-        return "delish"
-    if "dessert" in cat:
+    
+    # Desserts
+    if cat == "desserts":
         return "desserts"
-    # categories we intentionally ignore: breakfast bakery, breakfast entrees, etc.
+    
+    # Delish smoothies (lunch only, filtered out for dinner elsewhere)
+    if cat == "delish":
+        return "delish"
+    
+    # Ignore everything else including:
+    # - Brown Rice Station, Whole Grain Pasta Bar (separate stations)
+    # - Plant Protein (separate category)
+    # - Salad Bar, Deli, Grill, Halal, Breakfast items, etc.
     return None
 
 def _init_meal_bucket(include_delish: bool) -> Dict[str, List[str]]:
@@ -142,16 +159,8 @@ def _parse_meal_container(meal_td: Tag, meal_name: str) -> Dict[str, List[str]]:
                 tr_parent = tr_parent.parent if tr_parent else None
             flags = _extract_recipe_flags(tr_parent)
             
-            # Append flags if present
-            if flags:
-                if "vegan" in flags:
-                    dish = f"{dish_raw} (Vegan)"
-                elif "vegetarian" in flags:
-                    dish = f"{dish_raw} (Vegetarian)"
-                else:
-                    dish = dish_raw
-            else:
-                dish = dish_raw
+            # Don't append dietary flags - just use the dish name as-is
+            dish = dish_raw
             meal_data[current_bucket].append(dish)
     
     # Dedupe & clean
