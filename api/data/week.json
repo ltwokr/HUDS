@@ -1,7 +1,7 @@
 {
   "week_start": "2025-11-17",
   "week_end": "2025-11-23",
-  "generated_at": "2025-11-17T19:32:22Z",
+  "generated_at": "2025-11-17T22:22:52Z",
   "meals": {
     "2025-11-17": {
       "lunch": {
@@ -13,8 +13,7 @@
           "Chicken Tender",
           "Crumbled Bacon",
           "Grilled Chicken Breast",
-          "Roasted Hot Dogs",
-          "Vegan Macaroni & Cheese"
+          "Roasted Hot Dogs"
         ],
         "starch_potatoes": [
           "Macaroni and Cheese"
@@ -23,13 +22,8 @@
           "Roasted Brussel Sprouts with Cranberries & Garlic",
           "Sauteed Spinach, Artichoke and Onions"
         ],
-        "delish": [
-          "Chefs Choice Delish Smoothie"
-        ],
         "desserts": [
-          "Chocolate Chip Cookies",
-          "Pineapple Soft serve",
-          "Strawberry Soft serve"
+          "Chocolate Chip Cookies"
         ]
       },
       "dinner": {
@@ -39,8 +33,7 @@
         ],
         "entrees": [
           "Chicken Lemongrass Potstickers",
-          "Emerald Beef and Vegetable Stir-Fry",
-          "Vegetable Edamame Potstickers"
+          "Emerald Beef and Vegetable Stir-Fry"
         ],
         "starch_potatoes": [
           "Shiitake & Scallion Sticky Rice"
@@ -49,11 +42,8 @@
           "Roasted Broccoli",
           "Roasted Snow Peas & Red Peppers"
         ],
-        "delish": [],
         "desserts": [
-          "Apple Caramel Cake",
-          "Pineapple Soft serve",
-          "Strawberry Soft serve"
+          "Apple Caramel Cake"
         ]
       }
     },
@@ -66,8 +56,7 @@
         "entrees": [
           "Cumin & Ginger Braised Beef",
           "Grilled Chicken Breast",
-          "Saffron Chicken with Lemon & Olives",
-          "Falafel Sandwich"
+          "Saffron Chicken with Lemon & Olives"
         ],
         "starch_potatoes": [
           "Herbed Couscous"
@@ -76,13 +65,8 @@
           "Sauteed Kale",
           "Za'atar Roasted Baby Carrots"
         ],
-        "delish": [
-          "Strawberry Banana Smoothie"
-        ],
         "desserts": [
-          "Oatmeal Raisin Cookies",
-          "Pineapple Soft serve",
-          "Strawberry Soft serve"
+          "Oatmeal Raisin Cookies"
         ]
       },
       "dinner": {
@@ -92,8 +76,7 @@
         ],
         "entrees": [
           "Butter Chicken",
-          "Shrimp In Curry & Coconut Milk",
-          "Alu Chole"
+          "Shrimp In Curry & Coconut Milk"
         ],
         "starch_potatoes": [
           "Basmati Rice"
@@ -102,11 +85,8 @@
           "Roasted Cauliflower with Cumin & Cardamom",
           "Steamed Green Peas"
         ],
-        "delish": [],
         "desserts": [
-          "Coconut Cardamom Mango Rice Pudding",
-          "Pineapple Soft serve",
-          "Strawberry Soft serve"
+          "Coconut Cardamom Mango Rice Pudding"
         ]
       }
     },
@@ -119,8 +99,7 @@
         "entrees": [
           "Chili and Lime Chicken",
           "Grilled Chicken Breast",
-          "Shrimp & Monterey Jack Quesadilla with Peppers & Tomato",
-          "Plant Sausage, Corn and Black Bean Quesadilla"
+          "Shrimp & Monterey Jack Quesadilla with Peppers & Tomato"
         ],
         "starch_potatoes": [
           "Rice with Cumin & Serrano Peppers"
@@ -129,13 +108,8 @@
           "Roasted Corn, Zucchini, & Red Onion",
           "Steamed Broccoli"
         ],
-        "delish": [
-          "Chefs Choice Delish Smoothie"
-        ],
         "desserts": [
-          "Carnival Cookie",
-          "Pineapple Soft serve",
-          "Strawberry Soft serve"
+          "Carnival Cookie"
         ]
       },
       "dinner": {
@@ -145,8 +119,7 @@
         ],
         "entrees": [
           "Halal Rosemary Lemon Garlic Roasted Chicken",
-          "Oven Baked Greek Catch of Day",
-          "Mediterranean Sweet Potato and Chick Peas"
+          "Oven Baked Greek Catch of Day"
         ],
         "starch_potatoes": [
           "Baked Potatoes"
@@ -155,11 +128,8 @@
           "Olive Oil & Oregano Roasted Vegetables",
           "Steamed Spinach"
         ],
-        "delish": [],
         "desserts": [
-          "Carrot, Walnut Cake with Cream Cheese Icing",
-          "Pineapple Soft serve",
-          "Strawberry Soft serve"
+          "Carrot, Walnut Cake with Cream Cheese Icing"
         ]
       }
     },
@@ -173,8 +143,7 @@
           "Cheese Pizza",
           "Grilled Chicken Breast",
           "Penne Chicken and Broccoli Alfredo",
-          "Pepperoni Pizza",
-          "Portobello & Eggplant Parm"
+          "Pepperoni Pizza"
         ],
         "starch_potatoes": [
           "Lemon Herbed Orzo"
@@ -183,13 +152,8 @@
           "Roasted Local Seasonal Squash",
           "Steamed Broccoli, Carrots and Cauliflower"
         ],
-        "delish": [
-          "Chefs Choice Housemade Smoothie"
-        ],
         "desserts": [
-          "Chocolate Chip Cookies",
-          "Pineapple Soft serve",
-          "Strawberry Soft serve"
+          "Chocolate Chip Cookies"
         ]
       },
       "dinner": {
@@ -199,8 +163,7 @@
         ],
         "entrees": [
           "Pork Belly",
-          "Soy Glazed Chicken",
-          "Shoyu Marinated Tofu"
+          "Soy Glazed Chicken"
         ],
         "starch_potatoes": [
           "Ramen Noodles"
@@ -209,11 +172,8 @@
           "Bok Choy",
           "Steamed Corn"
         ],
-        "delish": [],
         "desserts": [
-          "Pineapple Soft serve",
-          "Salted Caramel Cake",
-          "Strawberry Soft serve"
+          "Salted Caramel Cake"
         ]
       }
     },
@@ -226,8 +186,7 @@
         "entrees": [
           "Battered & Fried Locally Caught Fresh Fish",
           "Chicken Fajitas Cheesesteak",
-          "Grilled Chicken Breast",
-          "Stewed Garbanzo with Tomato and Spinach"
+          "Grilled Chicken Breast"
         ],
         "starch_potatoes": [
           "Waffle Fries"
@@ -236,12 +195,7 @@
           "Maple Roasted Beets",
           "Sauteed Kale with Cranberries & Balsamic Glaze"
         ],
-        "delish": [
-          "Chefs Choice Delish Smoothie"
-        ],
         "desserts": [
-          "Pineapple Soft serve",
-          "Strawberry Soft serve",
           "Sugar Cookie"
         ]
       },
@@ -252,8 +206,7 @@
         ],
         "entrees": [
           "Shrimp and Andouille Sausage Etouffee",
-          "Spicy Cajun Chicken",
-          "Kelp and Chickpea Po Boy"
+          "Spicy Cajun Chicken"
         ],
         "starch_potatoes": [
           "Cheesy Grits"
@@ -262,11 +215,8 @@
           "Roasted Okra, Onions and Tomato",
           "Spicy Cane Syrup Glazed Winter Squash"
         ],
-        "delish": [],
         "desserts": [
           "Maple and Apple Bread Pudding",
-          "Pineapple Soft serve",
-          "Strawberry Soft serve",
           "Whipped Topping"
         ]
       }
@@ -279,8 +229,7 @@
         ],
         "entrees": [
           "Grilled Chicken Breast",
-          "Grilled Reuben Sandwich",
-          "Roasted Tofu with Tomato and Basil and Vegan Cheese"
+          "Grilled Reuben Sandwich"
         ],
         "starch_potatoes": [
           "Curly French Fries"
@@ -289,11 +238,8 @@
           "Chefs Choice",
           "Steamed Broccoli"
         ],
-        "delish": [],
         "desserts": [
-          "Double Chocolate Chip Cookies",
-          "Pineapple Soft serve",
-          "Strawberry Soft serve"
+          "Double Chocolate Chip Cookies"
         ]
       },
       "dinner": {
@@ -303,8 +249,7 @@
         ],
         "entrees": [
           "Chicken Piccatta",
-          "Meatballs in Marinara Sauce",
-          "Vegetarian Meatballs"
+          "Meatballs in Marinara Sauce"
         ],
         "starch_potatoes": [
           "Spaghetti"
@@ -313,10 +258,7 @@
           "Herb Grilled Zucchini with Balsamic Glaze",
           "Steamed Green Peas"
         ],
-        "delish": [],
         "desserts": [
-          "Pineapple Soft serve",
-          "Strawberry Soft serve",
           "Tiramisu"
         ]
       }
@@ -328,18 +270,14 @@
           "White Bean and Escarole"
         ],
         "entrees": [
-          "Grilled Chicken Breast",
-          "Vegan Cumin and Chili Spiced Quinoa"
+          "Grilled Chicken Breast"
         ],
         "starch_potatoes": [],
         "vegetables": [
           "Roasted Corn & Black Beans"
         ],
-        "delish": [],
         "desserts": [
-          "Chocolate Chip Cookies",
-          "Pineapple Soft serve",
-          "Strawberry Soft serve"
+          "Chocolate Chip Cookies"
         ]
       },
       "dinner": {
@@ -349,8 +287,7 @@
         ],
         "entrees": [
           "BBQ Chicken",
-          "Honey Glazed Ribs",
-          "Three Bean & Plant Based Chorizo Chili"
+          "Honey Glazed Ribs"
         ],
         "starch_potatoes": [
           "Macaroni and Cheese"
@@ -359,7 +296,6 @@
           "Maple Glazed Carrots with Cinnamon and Ginger",
           "Ranch Braised Cabbage"
         ],
-        "delish": [],
         "desserts": [
           "Banana",
           "Butterscotch Topping",
@@ -369,10 +305,8 @@
           "Hot Fudge",
           "Lactaid Ice Cream",
           "Maraschino Cherry Halves",
-          "Pineapple Soft serve",
           "Plain M&M Topping",
           "Rainbow Sprinkles",
-          "Strawberry Soft serve",
           "Whipped Topping"
         ]
       }
