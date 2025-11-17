@@ -91,12 +91,12 @@ def _render_day_cell(day_iso: str, day_data: Dict[str, Any], is_today: bool = Fa
     
     # Build 3 columns for Lunch
     lunch_col1 = render_column("Entrées", ["entrees"], "lunch")
-    lunch_col2 = render_column("Veg + Starch", ["vegetables", "starch_potatoes"], "lunch")
+    lunch_col2 = render_column("Vegetables + Starch", ["vegetables", "starch_potatoes"], "lunch")
     lunch_col3 = render_column("Soups + Dessert", ["soups", "desserts"], "lunch")
     
     # Build 3 columns for Dinner
     dinner_col1 = render_column("Entrées", ["entrees"], "dinner")
-    dinner_col2 = render_column("Veg + Starch", ["vegetables", "starch_potatoes"], "dinner")
+    dinner_col2 = render_column("Vegetables + Starch", ["vegetables", "starch_potatoes"], "dinner")
     dinner_col3 = render_column("Soups + Dessert", ["soups", "desserts"], "dinner")
     
     # Today indicator styling
