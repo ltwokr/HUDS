@@ -23,10 +23,9 @@ FUZZY_MAP = {
     "entrees": {"entrée", "entrees", "entrée(s)", "main entrée", "main entrees", "main course", "entrée(s)"},
     "starch_potatoes": {"starch and potatoes", "starch & potatoes", "starches", "potato", "potatoes"},
     "vegetables": {"vegetable", "vegetables", "veg"},
-    "delish": {"delish"},
     "desserts": {"dessert", "desserts", "sweets"},
 }
-BUCKET_ORDER = ["soups", "entrees", "starch_potatoes", "vegetables", "delish", "desserts"]
+BUCKET_ORDER = ["soups", "entrees", "starch_potatoes", "vegetables", "desserts"]
 
 DAY_NAMES = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
@@ -61,7 +60,7 @@ def _classify_category(cat_raw: str) -> Optional[str]:
         return "soups"
     
     # Entrees - main dishes only
-    if cat in ["entrees", "entrée", "veg,vegan"]:
+    if cat in ["entrees", "entrée"]:
         return "entrees"
     
     # Starch & Potatoes - only the exact category name
@@ -76,20 +75,15 @@ def _classify_category(cat_raw: str) -> Optional[str]:
     if cat == "desserts":
         return "desserts"
     
-    # Delish smoothies (lunch only, filtered out for dinner elsewhere)
-    if cat == "delish":
-        return "delish"
-    
     # Ignore everything else including:
     # - Brown Rice Station, Whole Grain Pasta Bar (separate stations)
     # - Plant Protein (separate category)
     # - Salad Bar, Deli, Grill, Halal, Breakfast items, etc.
+    # - Delish (removed entirely)
     return None
 
-def _init_meal_bucket(include_delish: bool) -> Dict[str, List[str]]:
+def _init_meal_bucket() -> Dict[str, List[str]]:
     meal = {k: [] for k in BUCKET_ORDER}
-    if not include_delish:
-        meal["delish"] = []
     return meal
 
 def _dedupe_preserve(seq: List[str]) -> List[str]:
@@ -160,15 +154,15 @@ def _parse_meal_container(meal_td: Tag, meal_name: str) -> Dict[str, List[str]]:
             flags = _extract_recipe_flags(tr_parent)
             
             # Don't append dietary flags - just use the dish name as-is
+            # Filter out soft serve items from desserts
             dish = dish_raw
+            if current_bucket == "desserts" and "soft serve" in dish.lower():
+                continue
             meal_data[current_bucket].append(dish)
     
     # Dedupe & clean
     for k in meal_data:
         meal_data[k] = _dedupe_preserve(meal_data[k])
-    # Dinner should not include delish bucket items per original interface
-    if meal_name.lower() == "dinner":
-        meal_data["delish"] = []
     return meal_data
 
 def parse_day(html: str) -> Dict[str, Dict[str, List[str]]]:
@@ -187,8 +181,8 @@ def parse_day(html: str) -> Dict[str, Dict[str, List[str]]]:
             meal_tds[meal_name] = td
     
     # Build structure (we only persist lunch/dinner to stay compatible)
-    lunch = _parse_meal_container(meal_tds.get("lunch", Tag(name="div")), "Lunch") if meal_tds.get("lunch") else _init_meal_bucket(True)
-    dinner = _parse_meal_container(meal_tds.get("dinner", Tag(name="div")), "Dinner") if meal_tds.get("dinner") else _init_meal_bucket(False)
+    lunch = _parse_meal_container(meal_tds.get("lunch", Tag(name="div")), "Lunch") if meal_tds.get("lunch") else _init_meal_bucket()
+    dinner = _parse_meal_container(meal_tds.get("dinner", Tag(name="div")), "Dinner") if meal_tds.get("dinner") else _init_meal_bucket()
     return {"lunch": lunch, "dinner": dinner}
 
 def parse_week(fetch_html_for_day=fetch_day_html) -> dict:
@@ -209,7 +203,7 @@ def parse_week(fetch_html_for_day=fetch_day_html) -> dict:
             html = fetch_html_for_day(d)
             day_data = parse_day(html)
         except ScrapeError:
-            day_data = {"lunch": _init_meal_bucket(True), "dinner": _init_meal_bucket(False)}
+            day_data = {"lunch": _init_meal_bucket(), "dinner": _init_meal_bucket()}
         # Track if we have at least one dish
         if any(day_data[meal][bucket] for meal in ("lunch", "dinner") for bucket in BUCKET_ORDER):
             any_item = True
