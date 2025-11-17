@@ -31,7 +31,7 @@ class ErrorOut(BaseModel):
 def _render_day_cell(day_iso: str, day_data: Dict[str, Any]) -> str:
     # Two sections: Lunch and Dinner
     def render_meal(title: str, meal: Dict[str, Any], include_delish: bool) -> str:
-        parts = [f"<div class='mb-3'><div class='font-medium mb-1'>{title}</div>"]
+        parts = [f"<div class='mb-3'><div class='text-lg font-semibold mb-1'>{title}</div>"]
         for key in ALLOWED_ORDER:
             if key == "delish" and not include_delish:
                 continue
@@ -60,7 +60,7 @@ def _render_day_cell(day_iso: str, day_data: Dict[str, Any]) -> str:
         pass
 
     inner = [
-        f"<div class='text-base font-semibold mb-2'>{dt_title}</div>",
+        f"<div class='text-2xl font-bold mb-3'>{dt_title}</div>",
         render_meal("Lunch", lunch, include_delish=True),
         render_meal("Dinner", dinner, include_delish=False),
     ]
