@@ -31,7 +31,7 @@ class ErrorOut(BaseModel):
 def _render_day_cell(day_iso: str, day_data: Dict[str, Any]) -> str:
     # Two sections: Lunch and Dinner
     def render_meal(title: str, meal: Dict[str, Any], include_delish: bool) -> str:
-        parts = [f"<div class='mb-3'><div class='text-lg font-semibold mb-1'>{title}</div>"]
+        parts = [f"<div class='mb-3'><div class='text-lg font-semibold mb-2'>{title}</div>"]
         for key in ALLOWED_ORDER:
             if key == "delish" and not include_delish:
                 continue
@@ -41,7 +41,8 @@ def _render_day_cell(day_iso: str, day_data: Dict[str, Any]) -> str:
             parts.append(f"<div class='text-sm text-gray-500 mb-1'>{LABELS[key]}</div>")
             parts.append("<div class='mb-2'>")
             for it in items:
-                parts.append(f"<span class='chip'>{it}</span>")
+                # Use block-level divs so each item is on its own line
+                parts.append(f"<div class='px-2 py-1 text-sm bg-gray-100 rounded-lg mb-2'>{it}</div>")
             parts.append("</div>")
         if all(not (meal.get(k) or []) for k in (["soups","entrees","starch_potatoes","vegetables","desserts"] + (["delish"] if include_delish else []))):
             parts.append("<div class='text-sm text-gray-400'>No items.</div>")
@@ -60,7 +61,7 @@ def _render_day_cell(day_iso: str, day_data: Dict[str, Any]) -> str:
         pass
 
     inner = [
-        f"<div class='text-2xl font-bold mb-3'>{dt_title}</div>",
+        f"<div class='text-xl font-bold mb-4'>{dt_title}</div>",
         render_meal("Lunch", lunch, include_delish=True),
         render_meal("Dinner", dinner, include_delish=False),
     ]
