@@ -60,6 +60,10 @@ def _render_day_cell(day_iso: str, day_data: Dict[str, Any], is_today: bool = Fa
         for cat in categories:
             items = lunch.get(cat, []) if meal_type == "lunch" else dinner.get(cat, [])
             
+            # Filter out Grilled Chicken Breast from lunch entrees (always available)
+            if cat == "entrees" and meal_type == "lunch":
+                items = [it for it in items if "grilled chicken breast" not in it.lower()]
+            
             # Apply overrides
             if cat == "entrees" and is_sunday and meal_type == "lunch":
                 items = ["Sunday Brunch"]
@@ -104,14 +108,14 @@ def _render_day_cell(day_iso: str, day_data: Dict[str, Any], is_today: bool = Fa
     today_badge = "<div class='absolute top-2 right-2 bg-blue-500 text-white text-xs px-2 py-1 rounded-full'>Today</div>" if is_today else ""
     
     return f"""
-    <div class='snap-start shrink-0 w-full h-full relative {today_ring} rounded-2xl bg-white border p-4 flex flex-col'>
+    <div class='snap-start md:snap-none shrink-0 w-full md:w-full h-auto md:h-full relative {today_ring} rounded-2xl bg-white border p-4 flex flex-col mb-4 md:mb-0'>
       {today_badge}
       <div class='text-center mb-4'>
         <div class='text-2xl font-bold'>{day_name}</div>
         <div class='text-sm text-gray-500'>{dt_title}</div>
       </div>
       
-      <div class='flex-1 grid grid-rows-2 gap-4 overflow-hidden'>
+      <div class='flex-1 grid grid-rows-2 gap-4'>
         <!-- Lunch Row -->
         <div class='border-b pb-2'>
           <div class='text-base font-semibold mb-2'>Lunch</div>
@@ -136,7 +140,7 @@ def _render_day_cell(day_iso: str, day_data: Dict[str, Any], is_today: bool = Fa
     """
 
 def _render_week_grid(data: Dict[str, Any]) -> str:
-    """Horizontal scrollable week view with snap-to-scroll."""
+    """Horizontal scrollable week view with snap-to-scroll on desktop, vertical stack on mobile."""
     days = list(data.get("meals", {}).keys())
     days_sorted = sorted(days)
     today = iso_today()
@@ -147,7 +151,7 @@ def _render_week_grid(data: Dict[str, Any]) -> str:
         cells.append(_render_day_cell(d, data["meals"][d], is_today))
     
     return f"""
-    <div id="grid" class="flex overflow-x-auto snap-x snap-mandatory gap-4 h-[calc(100vh-12rem)] pb-4" style="scroll-behavior: smooth;">
+    <div id="grid" class="flex flex-col md:flex-row overflow-y-auto md:overflow-x-auto md:overflow-y-hidden snap-y md:snap-x snap-mandatory gap-4 md:h-[calc(100vh-12rem)] pb-4" style="scroll-behavior: smooth;">
       {''.join(cells)}
     </div>
     """

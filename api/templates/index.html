@@ -9,10 +9,14 @@
   <!-- HTMX -->
   <script src="https://unpkg.com/htmx.org@1.9.12"></script>
   <style>
-    body { overflow: hidden; }
     /* Hide scrollbar but keep functionality */
     #grid::-webkit-scrollbar { display: none; }
     #grid { -ms-overflow-style: none; scrollbar-width: none; }
+    
+    /* Desktop: no body overflow, mobile: allow scroll */
+    @media (min-width: 768px) {
+      body { overflow: hidden; }
+    }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-900 h-full flex flex-col">
