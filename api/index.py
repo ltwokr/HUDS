@@ -54,7 +54,7 @@ def _render_day_cell(day_iso: str, day_data: Dict[str, Any], is_today: bool = Fa
     
     # Helper to render a column section
     def render_column(title: str, categories: list, meal_type: str) -> str:
-        col_parts = [f"<div class='text-sm font-semibold text-gray-700 mb-2'>{title}</div>"]
+        col_parts = [f"<div class='text-xs md:text-sm font-semibold text-gray-700 mb-2'>{title}</div>"]
         has_content = False
         
         for cat in categories:
@@ -86,10 +86,10 @@ def _render_day_cell(day_iso: str, day_data: Dict[str, Any], is_today: bool = Fa
             }.get(cat, "bg-gray-100")
             
             for it in items:
-                col_parts.append(f"<div class='px-2 py-1 text-xs {bg_cls} rounded mb-1'>{it}</div>")
+                col_parts.append(f"<div class='px-2 py-1 text-xs md:text-sm {bg_cls} rounded mb-1'>{it}</div>")
         
         if not has_content:
-            col_parts.append("<div class='text-xs text-gray-400'>—</div>")
+            col_parts.append("<div class='text-xs md:text-sm text-gray-400'>—</div>")
         
         return "".join(col_parts)
     
@@ -108,18 +108,18 @@ def _render_day_cell(day_iso: str, day_data: Dict[str, Any], is_today: bool = Fa
     today_badge = "<div class='absolute top-2 right-2 bg-blue-500 text-white text-xs px-2 py-1 rounded-full'>Today</div>" if is_today else ""
     
     return f"""
-    <div class='snap-start md:snap-none shrink-0 w-full md:w-full h-auto md:h-full relative {today_ring} rounded-2xl bg-white border p-4 flex flex-col mb-4 md:mb-0'>
+    <div class='snap-start md:snap-none shrink-0 w-full md:w-full h-auto md:h-full relative {today_ring} rounded-2xl bg-white border p-4 md:p-6 flex flex-col mb-4 md:mb-0'>
       {today_badge}
       <div class='text-center mb-4'>
-        <div class='text-2xl font-bold'>{day_name}</div>
-        <div class='text-sm text-gray-500'>{dt_title}</div>
+        <div class='text-2xl md:text-3xl font-bold'>{day_name}</div>
+        <div class='text-sm md:text-base text-gray-500'>{dt_title}</div>
       </div>
       
       <div class='flex-1 grid grid-rows-2 gap-4'>
         <!-- Lunch Row -->
         <div class='border-b pb-2'>
-          <div class='text-base font-semibold mb-2'>Lunch</div>
-          <div class='grid grid-cols-3 gap-2 text-xs items-start'>
+          <div class='text-base md:text-lg font-semibold mb-3'>Lunch</div>
+          <div class='grid grid-cols-3 gap-2 md:gap-3 text-xs items-start'>
             <div>{lunch_col1}</div>
             <div>{lunch_col2}</div>
             <div>{lunch_col3}</div>
@@ -128,8 +128,8 @@ def _render_day_cell(day_iso: str, day_data: Dict[str, Any], is_today: bool = Fa
         
         <!-- Dinner Row -->
         <div>
-          <div class='text-base font-semibold mb-2'>Dinner</div>
-          <div class='grid grid-cols-3 gap-2 text-xs items-start'>
+          <div class='text-base md:text-lg font-semibold mb-3'>Dinner</div>
+          <div class='grid grid-cols-3 gap-2 md:gap-3 text-xs items-start'>
             <div>{dinner_col1}</div>
             <div>{dinner_col2}</div>
             <div>{dinner_col3}</div>
