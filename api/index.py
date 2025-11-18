@@ -95,13 +95,13 @@ def _render_day_cell(day_iso: str, day_data: Dict[str, Any], is_today: bool = Fa
     
     # Build 3 columns for Lunch
     lunch_col1 = render_column("Entrées", ["entrees"], "lunch")
-    lunch_col2 = render_column("Vegetables + Starch", ["vegetables", "starch_potatoes"], "lunch")
-    lunch_col3 = render_column("Soups + Dessert", ["soups", "desserts"], "lunch")
+    lunch_col2 = render_column("Veg/Starch", ["vegetables", "starch_potatoes"], "lunch")
+    lunch_col3 = render_column("Soup/Dessert", ["soups", "desserts"], "lunch")
     
     # Build 3 columns for Dinner
     dinner_col1 = render_column("Entrées", ["entrees"], "dinner")
-    dinner_col2 = render_column("Vegetables + Starch", ["vegetables", "starch_potatoes"], "dinner")
-    dinner_col3 = render_column("Soups + Dessert", ["soups", "desserts"], "dinner")
+    dinner_col2 = render_column("Veg/Starch", ["vegetables", "starch_potatoes"], "dinner")
+    dinner_col3 = render_column("Soup/Dessert", ["soups", "desserts"], "dinner")
     
     # Today indicator styling
     today_ring = "ring-4 ring-blue-400" if is_today else ""
@@ -119,7 +119,7 @@ def _render_day_cell(day_iso: str, day_data: Dict[str, Any], is_today: bool = Fa
         <!-- Lunch Row -->
         <div class='border-b pb-2'>
           <div class='text-base font-semibold mb-2'>Lunch</div>
-          <div class='grid grid-cols-3 gap-2 text-xs'>
+          <div class='grid grid-cols-3 gap-2 text-xs items-start'>
             <div>{lunch_col1}</div>
             <div>{lunch_col2}</div>
             <div>{lunch_col3}</div>
@@ -129,7 +129,7 @@ def _render_day_cell(day_iso: str, day_data: Dict[str, Any], is_today: bool = Fa
         <!-- Dinner Row -->
         <div>
           <div class='text-base font-semibold mb-2'>Dinner</div>
-          <div class='grid grid-cols-3 gap-2 text-xs'>
+          <div class='grid grid-cols-3 gap-2 text-xs items-start'>
             <div>{dinner_col1}</div>
             <div>{dinner_col2}</div>
             <div>{dinner_col3}</div>
