@@ -1,22 +1,21 @@
-# HUDS Weekly (Non-Quincy) — Lunch & Dinner Dashboard + Daily Email
+# HUDS Weekly Menu App
 
-A minimal FastAPI app that scrapes Harvard Undergraduate Dining Services (HUDS) “This Week’s Menus” for all **non-Quincy houses** (which share the same menu), **ignores breakfast**, and renders a clean, mobile-first weekly dashboard (Lunch + Dinner only) focused on selected stations. It also sends a **daily 7:00 AM America/New_York** email via **Resend** with today’s Lunch & Dinner.
+A minimal FastAPI app that scrapes Harvard Undergraduate Dining Services (HUDS) lunch and dinner menus and displays offerings in a simple, clean format. 
 
 ## Features
 
-- Source: HUDS “This Week’s Menus” for non-Quincy houses (Annenberg & Quincy excluded by URL/scope).
-- Meals: Lunch & Dinner only (Breakfast ignored).
-- Stations included (and order):
-  1. **Soups**
-  2. **Entrées**
-  3. **Starch & Potatoes**
-  4. **Vegetables**
-  5. **Delish** (Lunch only)
-  6. **Desserts**
-- Minimal, responsive weekly grid (Mon → Sun) using Tailwind (CDN) and a touch of HTMX.
-- Manual “Refresh now” button to re-scrape.
+- Source: HUDS “This Week’s Menus” for upperclassmen houses.
+- Meals: Lunch & Dinner.
+- Categories included:
+  1. Entrées
+  2. Vegetables
+  3. Starch & Potatoes
+  4. Soups
+  5. Desserts
+- Minimal, responsive weekly grid (Mon → Sun) using Tailwind (CDN) and HTMX.
+- Manual “Refresh” button to re-scrape.
 - JSON APIs for week and today.
-- Vercel Cron triggers daily email at **12:00 UTC** (7:00 AM America/New_York in standard time).
+- Vercel Cron triggers daily email notification.
 
 ## Quick Start (Local)
 
